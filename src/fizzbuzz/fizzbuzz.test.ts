@@ -23,8 +23,8 @@ describe("FizzBuz", () => {
     expect(fizzbuzz(6)).toBe("fizz");
   });
 
-    it("should return fizz for input divisible by 5", () => {
+  it("should return fizz for input divisible by 5", () => {
     expect(fizzbuzz(10)).toBe("buzz");
   });
-
+  
 });

@@ -3,19 +3,11 @@ export function fizzbuzz(input: number): string {
     return "0";
   }
 
-  if (input === 3) {
-    return "fizz";
-  }
-
-  if (input === 5) {
-    return "buzz";
-  }
-
   if (input % 3 === 0) {
     return "fizz";
   }
 
-    if (input % 5 === 0) {
+  if (input % 5 === 0) {
     return "buzz";
   }
 
