@@ -8,4 +8,8 @@ describe("Max Number", () => {
     expect(maximumNumber()).toBe(undefined);
   });
 
+  it("should return null for empty array of numbers", () => {
+    expect(maximumNumber([])).toBe(null);
+  })
+
 });
