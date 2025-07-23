@@ -7,4 +7,8 @@ describe("Palindrome", () => {
     expect(isPalindrome()).toBe(false);
   });
 
+  it("should return true for a empty input", () => {
+    expect(isPalindrome("")).toBe(true);
+  });
+
 });
