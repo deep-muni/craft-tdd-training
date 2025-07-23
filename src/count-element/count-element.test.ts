@@ -15,4 +15,8 @@ describe("Count Element", () => {
     expect(countElement("deep", ["sneha"])).toBe(0);
   });
 
+  it("should return count for list with multiple element and target is present", () => {
+    expect(countElement("deep", ["sneha", "deep", "deep", "sneha"])).toBe(2);
+  });
+
 });

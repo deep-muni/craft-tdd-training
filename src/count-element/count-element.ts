@@ -11,4 +11,12 @@ export function countElement(target: string, list: string[]): number {
     }
   }
 
+  let count = 0;
+  for (const element of list) {
+    if (target === element) {
+      count++;
+    }
+  }
+
+  return count;
 }
