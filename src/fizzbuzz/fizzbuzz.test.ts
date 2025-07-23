@@ -19,4 +19,8 @@ describe("FizzBuz", () => {
     expect(fizzbuzz(5)).toBe("buzz");
   });
 
+  it("should return fizz for input divisible by 3", () => {
+    expect(fizzbuzz(6)).toBe("fizz");
+  });
+
 });
