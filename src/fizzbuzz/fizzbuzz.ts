@@ -3,5 +3,9 @@ export function fizzbuzz(input: number): string {
     return "fizz";
   }
 
+  if (input === 5) {
+    return "buzz";
+  }
+
   return input.toString();
 }
