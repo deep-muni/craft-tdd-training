@@ -15,4 +15,8 @@ describe("Product of numbers", () => {
     expect(product(2, 3)).toBe(6);
   });
 
+    it("should return product of multiple numbers", () => {
+    expect(product(2, 3, 4)).toBe(24);
+  });
+
 });
