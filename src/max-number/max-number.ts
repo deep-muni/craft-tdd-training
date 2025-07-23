@@ -1,9 +1,13 @@
-export function maximumNumber(number?: number[]): number | undefined | null {
-  if (number?.length === 0) {
+export function maximumNumber(numbers?: number[]): number | undefined | null {
+  if(!numbers) {
+    return undefined;
+  }
+
+  if (numbers.length === 0) {
     return null;
   }
 
-  if (number?.length === 1) {
-    return number[0];
+  if (numbers.length === 1) {
+    return numbers[0];
   }
 }
