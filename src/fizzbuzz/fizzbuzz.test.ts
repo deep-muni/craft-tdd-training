@@ -1,7 +1,7 @@
 import { describe, it, expect } from "vitest";
 import { fizzbuzz } from "./fizzbuzz";
 
-describe("FizzBuz", () => {
+describe("FizzBuzz", () => {
 
   it.each([
     [0, "0"],
