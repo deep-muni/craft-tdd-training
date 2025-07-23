@@ -16,4 +16,8 @@ describe("Max Number", () => {
     expect(maximumNumber([1])).toBe(1);
   });
 
+  it("should return maximum number with multiple numbers", () => {
+    expect(maximumNumber([1, 2, 5, 3, 7, 5])).toBe(7);
+  });
+  
 });
