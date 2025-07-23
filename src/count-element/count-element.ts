@@ -1,3 +1,3 @@
-export function countElement(target: string, list: string[]): number {
+export function countElement<T>(target: T, list: T[]): number {
   return list.filter(item => item === target).length;
 }
