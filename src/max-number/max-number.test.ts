@@ -10,6 +10,10 @@ describe("Max Number", () => {
 
   it("should return null for empty array of numbers", () => {
     expect(maximumNumber([])).toBe(null);
-  })
+  });
+
+  it("should return number for array with single number", () => {
+    expect(maximumNumber([1])).toBe(1);
+  });
 
 });
