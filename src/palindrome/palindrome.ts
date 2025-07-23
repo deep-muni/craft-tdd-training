@@ -3,5 +3,7 @@ export function isPalindrome(input: string): boolean {
     return true;
   }
 
-  return input.toLowerCase() === input.toLowerCase().split('').reverse().join('');
+  const inputWithoutSpaceLowerCase = input.replace(/ /g, '').toLowerCase();
+
+  return inputWithoutSpaceLowerCase === inputWithoutSpaceLowerCase.split('').reverse().join('');
 }
