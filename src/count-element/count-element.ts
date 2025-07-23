@@ -6,6 +6,8 @@ export function countElement(target: string, list: string[]): number {
   if (list.length === 1) {
     if (target === list[0]) {
       return 1;
+    } else {
+      return 0;
     }
   }
 

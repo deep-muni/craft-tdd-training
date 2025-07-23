@@ -7,8 +7,12 @@ describe("Count Element", () => {
     expect(countElement("deep", [])).toBe(0);
   });
 
-    it("should return 1 for list with single element and target matches", () => {
+  it("should return 1 for list with single element and target matches", () => {
     expect(countElement("deep", ["deep"])).toBe(1);
+  });
+
+  it("should return 0 for list with single element and target does not match", () => {
+    expect(countElement("deep", ["sneha"])).toBe(0);
   });
 
 });
