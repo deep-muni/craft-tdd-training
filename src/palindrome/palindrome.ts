@@ -1,7 +1,7 @@
 export function isPalindrome(input: string): boolean {
-  if (input?.length === 0 || input?.length === 1) {
+  if (input.length === 0 || input.length === 1) {
     return true;
   }
 
-  return input === input.split('').reverse().join('');
+  return input.toLowerCase() === input.toLowerCase().split('').reverse().join('');
 }

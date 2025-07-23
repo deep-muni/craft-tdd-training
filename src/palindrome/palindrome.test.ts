@@ -15,8 +15,16 @@ describe("Palindrome", () => {
     expect(isPalindrome("aa")).toBe(true);
   });
 
-    it("should return true for a non palindrome word input", () => {
+  it("should return false for a non palindrome word input", () => {
     expect(isPalindrome("ab")).toBe(false);
+  });
+  
+  it("should return true for a palindrome word input (case-sensitive)", () => {
+    expect(isPalindrome("Aa")).toBe(true);
+  });
+
+  it("should return false for a non palindrome word input (case-sensitive)", () => {
+    expect(isPalindrome("Ab")).toBe(false);
   });
   
 });
