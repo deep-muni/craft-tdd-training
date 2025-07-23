@@ -7,4 +7,8 @@ describe("Product of numbers", () => {
     expect(product()).toBe(1);
   });
 
+  it("should return the number for number", () => {
+    expect(product(2)).toBe(2);
+  })
+
 });
