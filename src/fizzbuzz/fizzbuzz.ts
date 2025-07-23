@@ -15,5 +15,9 @@ export function fizzbuzz(input: number): string {
     return "fizz";
   }
 
+    if (input % 5 === 0) {
+    return "buzz";
+  }
+
   return input.toString();
 }
