@@ -11,4 +11,8 @@ describe("Palindrome", () => {
     expect(isPalindrome("")).toBe(true);
   });
 
+  it("should return true for a single character input", () => {
+    expect(isPalindrome("a")).toBe(true);
+  });
+
 });
