@@ -11,4 +11,12 @@ describe("Palindrome", () => {
     expect(isPalindrome("a")).toBe(true);
   });
 
+  it("should return true for a palindrome word input", () => {
+    expect(isPalindrome("aa")).toBe(true);
+  });
+
+    it("should return true for a non palindrome word input", () => {
+    expect(isPalindrome("ab")).toBe(false);
+  });
+  
 });
