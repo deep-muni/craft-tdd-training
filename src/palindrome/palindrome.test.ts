@@ -61,6 +61,6 @@ describe("Palindrome", () => {
 
   it('should return false for a non palindrome with emoji character', () => {
     expect(isPalindrome("🧟🎄")).toBe(false);
-  })
+  });
 
 });

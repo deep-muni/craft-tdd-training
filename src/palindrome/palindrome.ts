@@ -1,9 +1,18 @@
+const PUNCTUATION_AND_WHITESPACE_PATTERN = /[\p{P}\p{White_Space}]/gu;
+
 export function isPalindrome(input: string): boolean {
-  if (input.length === 0 || input.length === 1) {
+  if (input.length <= 1) {
     return true;
   }
 
-  const onlyLowerCaseAlphabetAndDigit = input.replace(/[\p{P}\p{White_Space}]/gu, '').toLowerCase();
+  const normalizedInput = normalize(input);
+  return normalizedInput === reverse(normalizedInput);
+}
 
-  return onlyLowerCaseAlphabetAndDigit === Array.from(onlyLowerCaseAlphabetAndDigit).reverse().join('');
+function normalize(input: string): string {
+  return input.replace(PUNCTUATION_AND_WHITESPACE_PATTERN, '').toLowerCase();
+}
+
+function reverse(input: string): string {
+  return [...input].reverse().join('');
 }
