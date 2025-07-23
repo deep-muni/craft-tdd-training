@@ -55,4 +55,12 @@ describe("Palindrome", () => {
     expect(isPalindrome("上海自來水來自海上")).toBe(true);
   });
 
+  it('should return true for a palindrome with emoji character', () => {
+    expect(isPalindrome("🧟")).toBe(true);
+  });
+
+  it('should return false for a non palindrome with emoji character', () => {
+    expect(isPalindrome("🧟🎄")).toBe(false);
+  })
+
 });

@@ -5,5 +5,5 @@ export function isPalindrome(input: string): boolean {
 
   const onlyLowerCaseAlphabetAndDigit = input.replace(/[\p{P}\p{White_Space}]/gu, '').toLowerCase();
 
-  return onlyLowerCaseAlphabetAndDigit === onlyLowerCaseAlphabetAndDigit.split('').reverse().join('');
+  return onlyLowerCaseAlphabetAndDigit === Array.from(onlyLowerCaseAlphabetAndDigit).reverse().join('');
 }
