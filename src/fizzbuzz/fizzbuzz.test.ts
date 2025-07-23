@@ -7,4 +7,8 @@ describe("FizzBuz", () => {
     expect(fizzbuzz(0)).toBe("0");
   });
 
+  it("should return 1 when input is 1", () => {
+    expect(fizzbuzz(1)).toBe("1");
+  });
+
 });
