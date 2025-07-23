@@ -9,6 +9,10 @@ describe("Product of numbers", () => {
 
   it("should return the number for number", () => {
     expect(product(2)).toBe(2);
-  })
+  });
+
+  it("should return product of 2 numbers", () => {
+    expect(product(2, 3)).toBe(6);
+  });
 
 });
