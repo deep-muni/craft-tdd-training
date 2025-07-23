@@ -1,8 +1,10 @@
 import { describe, it, expect } from "vitest";
+import { product } from "./product";
 
-describe("Setup", () => {
-  it("should create a product", () => {
+describe("Product of numbers", () => {
 
-    expect(true).toBe(true);
+  it("should return 1 for no input", () => {
+    expect(product()).toBe(1);
   });
+
 });
