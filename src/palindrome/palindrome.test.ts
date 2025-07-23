@@ -38,5 +38,13 @@ describe("Palindrome", () => {
   it("should return true for a palindrome phrase input with punctuation", () => {
     expect(isPalindrome("Was it a car, or a cat I saw?")).toBe(true);
   });
+
+  it("should return false for a non palindrome phrase input with punctuation and digit", () => {
+    expect(isPalindrome("2Was it a car, or a cat I saw?1")).toBe(false);
+  });
+
+  it("should return true for a palindrome phrase input with punctuation and digit", () => {
+    expect(isPalindrome("1Was it a car, or a cat I saw?1")).toBe(true);
+  });
   
 });

@@ -3,7 +3,7 @@ export function isPalindrome(input: string): boolean {
     return true;
   }
 
-  const onlyLowerCaseAlphabets = input.replace(/[^a-zA-Z]/g, '').toLowerCase();
+  const onlyLowerCaseAlphabetAndDigit = input.replace(/[^a-zA-Z0-9]/g, '').toLowerCase();
 
-  return onlyLowerCaseAlphabets === onlyLowerCaseAlphabets.split('').reverse().join('');
+  return onlyLowerCaseAlphabetAndDigit === onlyLowerCaseAlphabetAndDigit.split('').reverse().join('');
 }
