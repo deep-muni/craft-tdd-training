@@ -26,5 +26,9 @@ describe("FizzBuz", () => {
   it("should return fizz for input divisible by 5", () => {
     expect(fizzbuzz(10)).toBe("buzz");
   });
-  
+
+  it("should return fizzbuzz for input divisible by both 3 and 5", () => {
+    expect(fizzbuzz(15)).toBe("fizzbuzz");
+  });
+
 });

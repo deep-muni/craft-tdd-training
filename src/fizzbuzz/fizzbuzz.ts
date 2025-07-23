@@ -3,6 +3,10 @@ export function fizzbuzz(input: number): string {
     return "0";
   }
 
+  if (input % 15 === 0) {
+    return "fizzbuzz";
+  }
+
   if (input % 3 === 0) {
     return "fizz";
   }
