@@ -20,6 +20,10 @@ describe("Roman Numerals", () => {
     it("should return 5 for roman numeral V", () => {
       expect(parseRomanAsInt("V")).toBe(5);
     });
+    
+    it("should return 8 for roman numeral VIII", () => {
+      expect(parseRomanAsInt("VIII")).toBe(8);
+    });
 
   });
 
@@ -39,6 +43,10 @@ describe("Roman Numerals", () => {
 
     it("should return V for number 5", () => {
       expect(toRoman(5)).toBe("V");
+    });
+
+    it("should return VIII for number 8", () => {
+      expect(toRoman(8)).toBe("VIII");
     });
 
   });
