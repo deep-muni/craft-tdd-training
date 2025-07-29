@@ -13,6 +13,10 @@ describe("Roman Numerals", () => {
       expect(parseRomanAsInt("I")).toBe(1);
     });
 
+    it("should return 3 for roman numeral III", () => {
+      expect(parseRomanAsInt("III")).toBe(3);
+    });
+
   });
 
   describe("toRoman", () => {
@@ -23,6 +27,10 @@ describe("Roman Numerals", () => {
 
     it("should return I for number 1", () => {
       expect(toRoman(1)).toBe("I");
+    });
+
+    it("should return III for number 3", () => {
+      expect(toRoman(3)).toBe("III");
     });
 
   });

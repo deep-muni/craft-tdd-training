@@ -1,7 +1,11 @@
 export function parseRomanAsInt(roman: string): number {
   let number = 0;
 
-  if (roman == "I") number = 1;
+  while (roman.startsWith("I")) {
+    number = number + 1;
+    roman = roman.substring(1);
+  }
+
   return number;
 }
 
@@ -9,6 +13,10 @@ export function parseRomanAsInt(roman: string): number {
 export function toRoman(number: number): string {
   let roman = "";
   
-  if (number == 1) roman = "I";
+  while (number >= 1) {
+    roman = roman + "I";
+    number = number - 1;
+  }
+
   return roman;
 }
