@@ -11,23 +11,10 @@ export function parseRomanAsInt(roman: string): number {
   let number = 0;
   let remainingRoman = roman;
 
-  {
-    const romanDigit = "V";
-    const romanDigitValue = 5;
-
-    while (remainingRoman.startsWith(romanDigit)) {
-      number += romanDigitValue;
-      remainingRoman = remainingRoman.substring(romanDigit.length);
-    }
-  }
-
-  {
-    const romanDigit = "I";
-    const romanDigitValue = 1;
-
-    while (remainingRoman.startsWith(romanDigit)) {
-      number += romanDigitValue;
-      remainingRoman = remainingRoman.substring(romanDigit.length);
+  for (let {digit, value} of RomanNumeralsInProcessingOrder) {
+     while (remainingRoman.startsWith(digit)) {
+      number += value;
+      remainingRoman = remainingRoman.substring(digit.length);
     }
   }
 
@@ -39,23 +26,10 @@ export function toRoman(number: number): string {
   let roman = "";
   let remainingNumber = number;
 
-  {
-    const romanDigit = "V";
-    const romanDigitValue = 5;
-
-    while (remainingNumber >= romanDigitValue) {
-      roman += romanDigit;
-      remainingNumber -= romanDigitValue;
-    }
-  }
-
-  {
-    const romanDigit = "I";
-    const romanDigitValue = 1;
-
-    while (remainingNumber >= romanDigitValue) {
-      roman += romanDigit;
-      remainingNumber -= romanDigitValue;
+  for (let {digit, value} of RomanNumeralsInProcessingOrder) {
+    while (remainingNumber >= value) {
+      roman += digit;
+      remainingNumber -= value;
     }
   }
 
