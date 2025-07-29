@@ -1,3 +1,10 @@
+const RomanNumerals = Object.freeze([
+  { digit: "I", value: 1},
+  { digit: "V", value: 5},
+]);
+
+const RomanNumeralsInProcessingOrder = Object.freeze([...RomanNumerals].sort((a, b) => b.value - a.value));
+
 export function parseRomanAsInt(roman: string): number {
   let number = 0;
   let remainingRoman = roman;
